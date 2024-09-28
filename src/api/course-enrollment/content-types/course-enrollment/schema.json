@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_enrollments",
+  "info": {
+    "singularName": "course-enrollment",
+    "pluralName": "course-enrollments",
+    "displayName": "Course Enrollment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userRole": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "string"
+    },
+    "dateCancelled": {
+      "type": "datetime"
+    },
+    "dateCompleted": {
+      "type": "date"
+    },
+    "reasonForCancelling": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "In Active"
+      ],
+      "default": "Active",
+      "required": true
+    },
+    "enrollmentId": {
+      "type": "uid",
+      "required": false
+    },
+    "courseOffering": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-offering.course-offering"
+    },
+    "enrollmentLifecycle": {
+      "type": "enumeration",
+      "enum": [
+        "Enrolled",
+        "In Progress",
+        "Completed",
+        "Cancelled"
+      ],
+      "default": "Enrolled",
+      "required": true
+    },
+    "classroomEnrollment": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::classroom-enrollment.classroom-enrollment",
+      "inversedBy": "courseEnrollments"
+    },
+    "scormRegistration": {
+      "type": "boolean",
+      "default": false
+    },
+    "dateStarted": {
+      "type": "date"
+    },
+    "userId": {
+      "type": "string",
+      "required": false
+    },
+    "userEmail": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

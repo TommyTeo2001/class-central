@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_blocks_feature_highlights",
+  "info": {
+    "displayName": "FeatureHighlight",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textAboveMainHeader": {
+      "type": "text"
+    },
+    "mainHeader": {
+      "type": "text"
+    },
+    "subHeader": {
+      "type": "text"
+    },
+    "details": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buttonFeatureHighlight": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

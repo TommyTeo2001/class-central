@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_course_course_lessons",
+  "info": {
+    "displayName": "Course Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.lesson"
+    }
+  }
+}

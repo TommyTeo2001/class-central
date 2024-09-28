@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courseuploads",
+  "info": {
+    "singularName": "courseupload",
+    "pluralName": "courseuploads",
+    "displayName": "Course Upload",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "courseName": {
+      "type": "string"
+    },
+    "courseUploadUrl": {
+      "type": "string"
+    },
+    "folderNameAWS": {
+      "type": "string",
+      "unique": true
+    },
+    "eTag": {
+      "type": "string",
+      "unique": false
+    },
+    "courseId": {
+      "type": "integer",
+      "unique": false
+    }
+  }
+}

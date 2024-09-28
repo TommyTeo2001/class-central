@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_full_width_ctas",
+  "info": {
+    "displayName": "FullWidthCTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "smallText": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "text"
+    },
+    "href": {
+      "type": "text"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_profile_cards",
+  "info": {
+    "displayName": "ProfileCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

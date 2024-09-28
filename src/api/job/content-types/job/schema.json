@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jobNumber": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Running ⏱️",
+        "Completed ✅",
+        "Failed ⛔"
+      ],
+      "default": "Running ⏱️",
+      "required": true
+    },
+    "logs": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": [
+        "Create",
+        "Update",
+        "Delete"
+      ],
+      "default": "Create"
+    },
+    "jsonLogs": {
+      "type": "json"
+    }
+  }
+}

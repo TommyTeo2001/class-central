@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_readings",
+  "info": {
+    "displayName": "Reading"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

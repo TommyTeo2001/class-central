@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_full_width_email_captures",
+  "info": {
+    "displayName": "FullWidthEmailCapture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "smallText": {
+      "type": "string"
+    },
+    "headerText": {
+      "type": "text"
+    },
+    "href": {
+      "type": "text"
+    },
+    "buttonFullWidthEmail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

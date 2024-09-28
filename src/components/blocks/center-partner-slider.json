@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_center_partner_sliders",
+  "info": {
+    "displayName": "CenterPartnerSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textAboveMainHeader": {
+      "type": "string"
+    },
+    "mainHeader": {
+      "type": "text"
+    },
+    "subHeader": {
+      "type": "text"
+    },
+    "centerPartners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::center-partner.center-partner"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

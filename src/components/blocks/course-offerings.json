@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_course_offerings",
+  "info": {
+    "displayName": "CourseOfferings",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "courseOffering": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course-offering.course-offering"
+    }
+  }
+}

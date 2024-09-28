@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "explore_pages",
+  "info": {
+    "singularName": "explore-page",
+    "pluralName": "explore-pages",
+    "displayName": "explorePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "mainHeader": {
+      "type": "string",
+      "required": true,
+      "default": "Explore",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subHeader": {
+      "type": "text",
+      "default": "Browse our growing library to find the perfect course to extend your learning.",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

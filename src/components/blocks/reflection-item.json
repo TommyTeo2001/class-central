@@ -1,0 +1,17 @@
+{
+    "collectionName": "components_blocks_reflection_items",
+    "info": {
+        "displayName": "reflection-item"
+    },
+    "options": {},
+    "attributes": {
+        "itemTitle": {
+            "type": "string",
+            "required": true
+        },
+        "itemDescription": {
+            "type": "richtext",
+            "required": true
+        }
+    }
+}

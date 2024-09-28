@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "checkoutSessionId": {
+      "type": "text",
+      "required": false
+    },
+    "price": {
+      "type": "decimal",
+      "required": false
+    },
+    "customerId": {
+      "type": "string"
+    },
+    "customerEmail": {
+      "type": "string",
+      "required": false
+    },
+    "paymentStatus": {
+      "type": "string",
+      "required": false
+    },
+    "responseMessage": {
+      "type": "json"
+    },
+    "checkoutClientSecret": {
+      "type": "text"
+    },
+    "courseOfferings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-offering.course-offering"
+    },
+    "classroomOfferings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::classroom-offering.classroom-offering"
+    },
+    "stripeCustomerId": {
+      "type": "string"
+    },
+    "invoiceUrl": {
+      "type": "string"
+    },
+    "checkoutSessionExpiration": {
+      "type": "datetime"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group.group",
+      "mappedBy": "order"
+    }
+  }
+}

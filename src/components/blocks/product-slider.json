@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_blocks_product_sliders",
+  "info": {
+    "displayName": "ProductSlider"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "courseOfferings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-offering.course-offering"
+    },
+    "classrooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::classroom.classroom"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "productsToShow": {
+      "type": "integer"
+    }
+  }
+}

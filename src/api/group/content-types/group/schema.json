@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "groupName": {
+      "type": "string"
+    },
+    "courseOfferings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course-offering.course-offering"
+    },
+    "classroomOfferings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::classroom-offering.classroom-offering"
+    },
+    "numberOfSeats": {
+      "type": "integer",
+      "default": 0
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "inversedBy": "group"
+    },
+    "pendingLearners": {
+      "type": "customField",
+      "customField": "plugin::list-tags.listTags"
+    },
+    "admins": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "learners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

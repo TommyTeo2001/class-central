@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_blocks_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "layoutTypes": {
+      "type": "enumeration",
+      "enum": [
+        "Layout 1",
+        "Layout 2"
+      ],
+      "default": "Layout 1",
+      "required": true
+    },
+    "headingAboveHeroText": {
+      "type": "string"
+    },
+    "heroTextFirstLine": {
+      "type": "customField",
+      "customField": "plugin::list-tags.listTags"
+    },
+    "heroTextSecondLine": {
+      "type": "string"
+    },
+    "heroTextSubheading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

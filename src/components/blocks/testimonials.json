@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_testimonials",
+  "info": {
+    "displayName": "Testimonials",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "profileCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.profile-card"
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

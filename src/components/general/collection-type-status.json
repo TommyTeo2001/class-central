@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_general_collection_type_statuses",
+  "info": {
+    "displayName": "Collection Type Status"
+  },
+  "options": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "In Active"
+      ],
+      "default": "Active",
+      "required": true
+    }
+  }
+}

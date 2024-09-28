@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_related_courses",
+  "info": {
+    "displayName": "Courses",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "courseName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

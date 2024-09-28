@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classroom_enrollments",
+  "info": {
+    "singularName": "classroom-enrollment",
+    "pluralName": "classroom-enrollments",
+    "displayName": "Classroom Enrollment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "classroomOffering": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::classroom-offering.classroom-offering"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Learner",
+        "Admin"
+      ],
+      "default": "Learner"
+    },
+    "language": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "completionDate": {
+      "type": "date"
+    },
+    "enrollmentLifecycle": {
+      "type": "enumeration",
+      "enum": [
+        "Enrolled",
+        "In Progress",
+        "Completed",
+        "Cancelled"
+      ],
+      "default": "Enrolled",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Inactive"
+      ],
+      "required": true,
+      "default": "Active"
+    },
+    "enrollmentId": {
+      "type": "uid"
+    },
+    "courseEnrollments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course-enrollment.course-enrollment",
+      "mappedBy": "classroomEnrollment"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "string"
+    }
+  }
+}

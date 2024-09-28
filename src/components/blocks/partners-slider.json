@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_partners_sliders",
+  "info": {
+    "displayName": "PartnersSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "textAboveMainHeader": {
+      "type": "string"
+    },
+    "mainHeader": {
+      "type": "text"
+    },
+    "subHeader": {
+      "type": "text"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::center-partner.center-partner"
+    }
+  }
+}

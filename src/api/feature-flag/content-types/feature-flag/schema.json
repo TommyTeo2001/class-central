@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_flags",
+  "info": {
+    "singularName": "feature-flag",
+    "pluralName": "feature-flags",
+    "displayName": "Feature Flag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featureName": {
+      "type": "string",
+      "required": true
+    },
+    "featureVersion": {
+      "type": "string"
+    },
+    "productionEnvironment": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "uniqueFeatureName": {
+      "type": "uid"
+    },
+    "stagingEnvironment": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
